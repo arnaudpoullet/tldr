@@ -6,7 +6,7 @@ use std::env;
 use std::fs::File;
 
 fn cli_usage_and_exit(name: &str, error: &str) {
-    let split = name.split("/").collect::<Vec<&str>>();
+    let split = name.split('/').collect::<Vec<&str>>();
     let short_name = split.last().unwrap();
 
     eprintln!(
